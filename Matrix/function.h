@@ -10,6 +10,7 @@ void OutPut(int Matrix_out_large[20][20], TSMatrix Matrix_sparse, int vert_dim0,
 int ChooseALUop(LinkList * head);
 TSMatrix Add(TSMatrix Matrix_sparseA, TSMatrix Matrix_sparseB);
 TSMatrix Sub(TSMatrix Matrix_sparseA, TSMatrix Matrix_sparseB);
+TSMatrix Multiply(TSMatrix Matrix_sparseA, TSMatrix Matrix_sparseB);
 int CheckDimension(int ALUop, int vert_dimA0, int hor_dimA0, int vert_dimB0, int hor_dimB0);
 int Atoi(char c);
 

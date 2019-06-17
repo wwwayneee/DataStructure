@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAXSIZE	400
 #define MAXRC		20

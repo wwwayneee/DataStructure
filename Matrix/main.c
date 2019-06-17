@@ -4,8 +4,11 @@
 #include "header.h"
 #include "function.h"
 
-	//[[0,0,0,-103,0];[0,0,265,0,0];[0,-32,0,0,0];[4,0,0,0,0]]-[[1,0,0,-103,0];[0,0,265,0,0];[0,-32,0,0,0];[4,0,0,0,0]]
-	//[[0];[1]]-[[2];[3]]
+//[[4,0,0,-103,0];[0,0,265,0,0];[0,-32,0,0,0];[4,0,0,0,0]]-[[1,0,0,-103,0];[0,0,265,0,0];[0,-32,0,0,0];[4,0,0,0,0]]
+	//[[1,2,3,4];[5,6,7,8];[9,10,11,12]]*[[1,2,3];[4,5,6];[7,8,9];[10,11,12]]
+	//[[3,0,0,5];[0,-1,0,0];[2,0,0,0]]*[[0,2];[1,0];[-2,4];[0,0]]
+	//[[1,2];[3,4]]*[[1,2];[3,4]]
+//[[0];[1]]-[[2];[3]]
 //注意区分负号和减号！
 
 int main(int argc, const char * argv[])
@@ -43,13 +46,13 @@ int main(int argc, const char * argv[])
 	int Matrix_signA[20][20];
 	int Matrix_signB[20][20];
 	int MatrixA[vert_dimA0][hor_dimA0];
-	int MatrixB[vert_dimA0][hor_dimA0];
+	int MatrixB[vert_dimB0][hor_dimB0];
 	int Matrix_largeA[20][20];
 	int Matrix_largeB[20][20];
 	int Matrix_out_largeA[20][20];
 	int Matrix_out_largeB[20][20];
 	int Matrix_outA[vert_dimA0][hor_dimA0];
-	int Matrix_outB[vert_dimA0][hor_dimA0];
+	int Matrix_outB[vert_dimB0][hor_dimB0];
 	int Matrix_Answer_out_large[20][20];
 	
 	SetOriginalMatrixSign(head, Matrix_signA, Matrix_signB, vert_dimA0, hor_dimA0, vert_dimB0, hor_dimB0);
@@ -182,6 +185,7 @@ int main(int argc, const char * argv[])
 	else if (ALUop == MULTIPLY) {
 		vert_dim_Answer = vert_dimA0;
 		hor_dim_Answer = hor_dimB0;
+		Matrix_Answer = Multiply(Matrix_sparseA, Matrix_sparseB);
 	}
 	const int vert_dim_Answer0 = vert_dim_Answer;
 	const int hor_dim_Answer0 = hor_dim_Answer;
