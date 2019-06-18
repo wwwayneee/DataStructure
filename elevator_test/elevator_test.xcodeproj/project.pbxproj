@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2A3FF7822B7BAE5003AD32A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B2A3FF7722B7BAE5003AD32A /* main.c */; };
-		B2A3FF9622B87DDF003AD32A /* AddQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = B2A3FF9522B87DDF003AD32A /* AddQueue.c */; };
+		B2A3FF8C22B86FF1003AD32A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B2A3FF8B22B86FF1003AD32A /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B2A3FF7222B7BAE5003AD32A /* CopyFiles */ = {
+		B2A3FF8622B86FF1003AD32A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,15 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B2A3FF7422B7BAE5003AD32A /* Elevator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Elevator; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2A3FF7722B7BAE5003AD32A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		B2A3FF7E22B7C01F003AD32A /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
-		B2A3FF9322B8726E003AD32A /* function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = function.h; sourceTree = "<group>"; };
-		B2A3FF9522B87DDF003AD32A /* AddQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddQueue.c; sourceTree = "<group>"; };
+		B2A3FF8822B86FF1003AD32A /* elevator_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = elevator_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A3FF8B22B86FF1003AD32A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B2A3FF9222B86FFD003AD32A /* Dianti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dianti.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B2A3FF7122B7BAE5003AD32A /* Frameworks */ = {
+		B2A3FF8522B86FF1003AD32A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,106 +39,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B2A3FF6B22B7BAE5003AD32A = {
+		B2A3FF7F22B86FF1003AD32A = {
 			isa = PBXGroup;
 			children = (
-				B2A3FF7622B7BAE5003AD32A /* Elevator */,
-				B2A3FF9422B87DC4003AD32A /* functions */,
-				B2A3FF7522B7BAE5003AD32A /* Products */,
+				B2A3FF8A22B86FF1003AD32A /* elevator_test */,
+				B2A3FF8922B86FF1003AD32A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B2A3FF7522B7BAE5003AD32A /* Products */ = {
+		B2A3FF8922B86FF1003AD32A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2A3FF7422B7BAE5003AD32A /* Elevator */,
+				B2A3FF8822B86FF1003AD32A /* elevator_test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2A3FF7622B7BAE5003AD32A /* Elevator */ = {
+		B2A3FF8A22B86FF1003AD32A /* elevator_test */ = {
 			isa = PBXGroup;
 			children = (
-				B2A3FF7E22B7C01F003AD32A /* header.h */,
-				B2A3FF9322B8726E003AD32A /* function.h */,
-				B2A3FF7722B7BAE5003AD32A /* main.c */,
+				B2A3FF8B22B86FF1003AD32A /* main.c */,
+				B2A3FF9222B86FFD003AD32A /* Dianti.h */,
 			);
-			path = Elevator;
-			sourceTree = "<group>";
-		};
-		B2A3FF9422B87DC4003AD32A /* functions */ = {
-			isa = PBXGroup;
-			children = (
-				B2A3FF9522B87DDF003AD32A /* AddQueue.c */,
-			);
-			path = functions;
+			path = elevator_test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2A3FF7322B7BAE5003AD32A /* Elevator */ = {
+		B2A3FF8722B86FF1003AD32A /* elevator_test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2A3FF7B22B7BAE5003AD32A /* Build configuration list for PBXNativeTarget "Elevator" */;
+			buildConfigurationList = B2A3FF8F22B86FF1003AD32A /* Build configuration list for PBXNativeTarget "elevator_test" */;
 			buildPhases = (
-				B2A3FF7022B7BAE5003AD32A /* Sources */,
-				B2A3FF7122B7BAE5003AD32A /* Frameworks */,
-				B2A3FF7222B7BAE5003AD32A /* CopyFiles */,
+				B2A3FF8422B86FF1003AD32A /* Sources */,
+				B2A3FF8522B86FF1003AD32A /* Frameworks */,
+				B2A3FF8622B86FF1003AD32A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Elevator;
-			productName = Elevator;
-			productReference = B2A3FF7422B7BAE5003AD32A /* Elevator */;
+			name = elevator_test;
+			productName = elevator_test;
+			productReference = B2A3FF8822B86FF1003AD32A /* elevator_test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B2A3FF6C22B7BAE5003AD32A /* Project object */ = {
+		B2A3FF8022B86FF1003AD32A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "张宇轩";
 				TargetAttributes = {
-					B2A3FF7322B7BAE5003AD32A = {
+					B2A3FF8722B86FF1003AD32A = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = B2A3FF6F22B7BAE5003AD32A /* Build configuration list for PBXProject "Elevator" */;
+			buildConfigurationList = B2A3FF8322B86FF1003AD32A /* Build configuration list for PBXProject "elevator_test" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B2A3FF6B22B7BAE5003AD32A;
-			productRefGroup = B2A3FF7522B7BAE5003AD32A /* Products */;
+			mainGroup = B2A3FF7F22B86FF1003AD32A;
+			productRefGroup = B2A3FF8922B86FF1003AD32A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2A3FF7322B7BAE5003AD32A /* Elevator */,
+				B2A3FF8722B86FF1003AD32A /* elevator_test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B2A3FF7022B7BAE5003AD32A /* Sources */ = {
+		B2A3FF8422B86FF1003AD32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A3FF7822B7BAE5003AD32A /* main.c in Sources */,
-				B2A3FF9622B87DDF003AD32A /* AddQueue.c in Sources */,
+				B2A3FF8C22B86FF1003AD32A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B2A3FF7922B7BAE5003AD32A /* Debug */ = {
+		B2A3FF8D22B86FF1003AD32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +186,7 @@
 			};
 			name = Debug;
 		};
-		B2A3FF7A22B7BAE5003AD32A /* Release */ = {
+		B2A3FF8E22B86FF1003AD32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +238,7 @@
 			};
 			name = Release;
 		};
-		B2A3FF7C22B7BAE5003AD32A /* Debug */ = {
+		B2A3FF9022B86FF1003AD32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		B2A3FF7D22B7BAE5003AD32A /* Release */ = {
+		B2A3FF9122B86FF1003AD32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -271,25 +257,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2A3FF6F22B7BAE5003AD32A /* Build configuration list for PBXProject "Elevator" */ = {
+		B2A3FF8322B86FF1003AD32A /* Build configuration list for PBXProject "elevator_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2A3FF7922B7BAE5003AD32A /* Debug */,
-				B2A3FF7A22B7BAE5003AD32A /* Release */,
+				B2A3FF8D22B86FF1003AD32A /* Debug */,
+				B2A3FF8E22B86FF1003AD32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2A3FF7B22B7BAE5003AD32A /* Build configuration list for PBXNativeTarget "Elevator" */ = {
+		B2A3FF8F22B86FF1003AD32A /* Build configuration list for PBXNativeTarget "elevator_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2A3FF7C22B7BAE5003AD32A /* Debug */,
-				B2A3FF7D22B7BAE5003AD32A /* Release */,
+				B2A3FF9022B86FF1003AD32A /* Debug */,
+				B2A3FF9122B86FF1003AD32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B2A3FF6C22B7BAE5003AD32A /* Project object */;
+	rootObject = B2A3FF8022B86FF1003AD32A /* Project object */;
 }

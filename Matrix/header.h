@@ -11,7 +11,7 @@
 #define VALID		1
 #define INVALID	0
 typedef int ElemType;
-typedef enum {ADD, SUB, MULTIPLY} ALUop;
+typedef enum {ADD, SUB, MULTIPLY} ALUOP;
 typedef struct {
 	int vert_index, hor_index;			/* 非零元行下标以及列下标 */
 	ElemType value;
