@@ -1,0 +1,2 @@
+gcc -std=c11 main.c Multiply.c CreateMatrix.c SetDimension.c Add.c Sub.c CheckDimension.c ChooseALUop.c SetOriginalMatrixSign.c SetOriginalMatrixUnsigned.c OutPut.c Atoi.c CreateList.c -o main
+./main
